@@ -1,13 +1,10 @@
-package com.example.kamlesh.monetproject;
+package com.example.kamlesh.simplecalc;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 public class MainActivity extends AppCompatActivity {
 
     private Button one;        //variables
@@ -37,10 +34,12 @@ public class MainActivity extends AppCompatActivity {
     private double val2;
     private char ACTION;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         setupUIViews();
 
         zero.setOnClickListener(new View.OnClickListener() {
@@ -198,7 +197,7 @@ public class MainActivity extends AppCompatActivity {
         div = (Button)findViewById(R.id.btndiv);
         equal = (Button)findViewById(R.id.btnequal);
         clear = (Button)findViewById(R.id.btnclear);
-        result = (TextView)findViewById(R.id.tvResult);
+        result = (TextView)findViewById(R.id.textView3);
         info =(TextView)findViewById(R.id.tvControl);
 
     }
